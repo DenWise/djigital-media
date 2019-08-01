@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: develop_root
- * Date: 10.03.2018
- * Time: 9:39
- */
+
 require_once '../vendor/autoload.php';
 
 $router = new \Core\Router();
