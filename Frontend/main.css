@@ -1,0 +1,208 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(90, 146, 237);
+    color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+}
+
+a:hover {
+    color: white;
+}
+
+.container {
+    margin: 50px auto;
+    width: 400px;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.container ul li {
+    padding: 10px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.form-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(20,20,20,.4);
+}
+
+.auth {
+    width: 450px;
+    height: 380px;
+}
+
+.reg {
+    width: 450px;
+    height: 600px;
+}
+
+.form-container form {
+    position: relative;
+    width: 84%;
+    margin: 5px auto;
+}
+
+.form-container.auth form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    border: none;
+    background-color: rgba(242, 242, 242, 0.98);
+    border-radius: 3px;
+    height: 50px;
+    line-height: 30px;
+    padding-left: 18px;
+    font-size: 16px;
+    color: rgb(92, 103, 128);
+}
+
+.form-container.auth form input {
+    
+}
+
+form button {
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(57 ,151 ,215);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-container.auth form button {
+    margin-top: 60px; 
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+form button:hover {
+    box-shadow: 0 1px 6px rgba(20,20,20,.3);
+}
+
+.form-title {
+    margin: 0px auto;
+    text-align: center;
+    padding: 30px 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(70, 82, 107);
+    letter-spacing: 2px;
+}
+
+.form-container.reg .form-title {
+    border-bottom: 2px solid rgba(200,200,200,.3);
+    padding-bottom: 20px;
+}
+
+.form-container.reg .form-title span {
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.form-container.reg .form-title span {
+    display: block;
+    padding-left: 20px;
+}
+
+.form-title .title {
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.form-title .notice {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(70, 82, 107,.6);
+    padding-top: 4px;
+}
+
+.form-container.reg form .two-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.two-cols .input-wrapper {
+    position: relative;
+    width: 45%;
+}
+
+.two-cols .input-wrapper input {
+    width: 89%;
+}
+
+.form-container.reg form .one-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.one-col input {
+    
+}
+
+.button-wrapper button {
+    width: 40%;
+    margin-top: 30px;
+}
+
+.already-have {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.already-have a {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.error {
+    border: 1px solid rgb(201, 74, 65);
+    margin-bottom: 0px;
+}
+
+.error-msg {
+    color: rgb(201, 74, 65);
+    font-size: 12px;
+}
+
+.form-container.auth .error-msg {
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.form-container.reg .error-msg {
+    height: 25px;
+    margin-bottom: 0px;
+}

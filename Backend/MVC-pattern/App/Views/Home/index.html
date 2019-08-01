@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+        <h1>Welcome to our home page {{ name }}!</h1>
+        <ul>
+            {% for color in colors %}
+                <li style="color: {{ color }}">{{ color }}</li>
+            {% endfor %}
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi assumenda debitis deserunt doloribus error et, ipsam minus nemo omnis possimus quod veniam, voluptatibus?</p>
+        <button>Glad to see You too!</button>
+
+{% endblock %}
